@@ -4,24 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/main_bg"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Textify"
-        android:textSize="25sp"
-        android:textAlignment="center"
-        android:fontFamily="monospace"
-        android:textStyle="bold"
-        android:padding="5dp"/>
-
     <ImageView
-        android:id="@+id/capturedImg"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:background="@drawable/image_bg"
+        android:id="@+id/capturedImg"
+        android:background="@color/black"
         android:scaleType="fitCenter"
         android:contentDescription="CapturedImage"/>
 
@@ -29,7 +19,7 @@
         android:id="@+id/textValue"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:background="@drawable/image_bg"
+        android:background="@color/white"
         android:visibility="gone"/>
 
     <LinearLayout
@@ -41,7 +31,6 @@
             android:id="@+id/cameraBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
             android:textAlignment="center"
             android:onClick="onBtnClick"
             android:text="Camera"/>
@@ -50,7 +39,6 @@
             android:id="@+id/translate_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:textAlignment="center"
             android:onClick="onBtnClick"
             android:text="Textify"
