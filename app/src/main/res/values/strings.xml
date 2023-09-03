@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Textify</string>
+    <string name="camera_btn">Camera</string>
+    <string name="captured_image">CapturedImage</string>
 </resources>
